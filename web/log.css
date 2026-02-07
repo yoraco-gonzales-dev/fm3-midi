@@ -1,0 +1,129 @@
+.incomingLog {
+
+    width: 631px;
+    height: 478px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.incomingLog .logTimestamp {
+    width: 300px;
+    display: inline-block;
+    color: #757575;
+    font-size: small;
+}
+
+.incomingLog .logHex {
+    display: inline-block;
+    background-color: #FAFAFA;
+    font-family: monospace;
+    margin: 0.1rem;
+    color: grey;
+}
+
+.incomingLog .logRow {
+    display: block;
+}
+
+.logContainer {
+    max-width: fit-content;
+    position: absolute;
+    z-index: 9;
+    right: 4rem;
+    top: 4rem;
+    background-color: #E0E0E0;
+    width: 634px;
+    height: 480px;
+}
+
+.logContainer .logHeader {
+    height: 1.4rem;
+    z-index: 10;
+    cursor: move;
+    display: block;
+    width: 100%;
+    color: black;
+    background-color: grey;
+}
+
+
+.logContainer .logContainerClose {
+    z-index: 11;
+    position: absolute;
+    right: 0;
+    background: transparent;
+    font-size: 0.8rem;
+    height: 20px;
+    margin: auto;
+    line-height: 4px;
+    box-shadow: none;
+
+    margin-top: -1.4rem;
+}
+
+.logContainer .incomingLog {
+    background-color: #131313;
+}
+
+
+
+.logContainer .logHeader:after {
+    content: "Drag to move";
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+
+.logContainer .logSendControls,
+.logContainer .logListenControls {
+    border-bottom: solid 1px #131313;
+}
+
+.logContainer .logSendControls {}
+
+.logContainer .logSendControlsLabel {
+    display: block;
+    font-size: small;
+}
+
+.logContainer .logListenControls {}
+
+.logContainer .logListenControlsLabel {
+    display: block;
+    font-size: small;
+}
+
+.logContainer .logSendControls .sendButton {}
+
+.logContainer .logSendControls .switchButton {}
+
+.logContainer .logSendControls .syexContentMultiline {
+    display: block;
+    width: 90%;
+    min-height: 4rem;
+}
+
+.logContainer .logSendControls .syexContentSingle {
+    width: 70%;
+}
+
+
+.logContainer .logListenControls .filterLog {
+    width: 70%;
+}
+
+.incomingLog group {
+    display: block;
+}
+
+.incomingLog group:nth-child(even) {}
+
+.incomingLog group:nth-child(odd) {
+    background-color: #232323;
+}

@@ -1,0 +1,838 @@
+
+    /*<style>*/
+    .effect {
+        height: 65px !important;
+        width: 87px !important;
+        border: solid 1px transparent;
+        cursor:pointer;
+        background-color: black;
+        background-image: url(./sprites.jpeg);
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+    .effect.effectON, .effect.effectOFF {
+        color: gray;
+        background-color: transparent;
+        x-width: 10rem;
+        -xmargin: 0.4rem;
+        -xpadding: 1rem;
+    }
+    .effect.effectON, .effectON:hover {
+        opacity: 1;
+    }
+    .effectOFF:hover {
+        opacity: 0.7;
+    }
+    .effectOFF {
+        opacity: 0.5;
+    }
+    
+.ID_INPUT1 {
+    background-position: -27px -101px;
+}
+	
+.ID_INPUT2 {
+    background-position: -139px -101px;
+}
+	
+.ID_INPUT3 {
+    background-position: -251px -101px;
+}
+	
+.ID_INPUT4 {
+    background-position: -363px -101px;
+}
+	
+.ID_INPUT5 {
+    background-position: -475px -101px;
+}
+	
+.ID_OUTPUT1 {
+    background-position: -587px -101px;
+}
+	
+.ID_OUTPUT2 {
+    background-position: -699px -101px;
+}
+	
+.ID_OUTPUT3 {
+    background-position: -811px -101px;
+}
+	
+.ID_OUTPUT4 {
+    background-position: -923px -101px;
+}
+	
+.ID_DISTORT1 {
+    background-position: -1035px -101px;
+}
+	
+.ID_DISTORT2 {
+    background-position: -1147px -101px;
+}
+	
+.ID_CAB1 {
+    background-position: -1259px -101px;
+}
+	
+.ID_CAB2 {
+    background-position: -1371px -101px;
+}
+	
+.ID_CHORUS1 {
+    background-position: -1483px -101px;
+}
+	
+.ID_CHORUS2 {
+    background-position: -1595px -101px;
+}
+	
+.ID_COMP1 {
+    background-position: -1707px -101px;
+}
+	
+.ID_COMP2 {
+    background-position: -1819px -101px;
+}
+	
+.ID_COMP3 {
+    background-position: -1931px -101px;
+}
+	
+.ID_COMP4 {
+    background-position: -27px -186px;
+}
+	
+.ID_CROSSOVER1 {
+    background-position: -139px -186px;
+}
+	
+.ID_CROSSOVER2 {
+    background-position: -251px -186px;
+}
+	
+.ID_DELAY1 {
+    background-position: -363px -186px;
+}
+	
+.ID_DELAY2 {
+    background-position: -475px -186px;
+}
+	
+.ID_DELAY3 {
+    background-position: -587px -186px;
+}
+	
+.ID_DELAY4 {
+    background-position: -699px -186px;
+}
+	
+.ID_FUZZ1 {
+    background-position: -811px -186px;
+}
+	
+.ID_FUZZ2 {
+    background-position: -923px -186px;
+}
+	
+.ID_FUZZ3 {
+    background-position: -1035px -186px;
+}
+	
+.ID_FUZZ4 {
+    background-position: -1147px -186px;
+}
+	
+.MISSING_DYNDST1 {
+    background-position: -1259px -186px;
+}
+	
+.MISSING_DYNDST2 {
+    background-position: -1371px -186px;
+}
+	
+.ID_ENHANCER1 {
+    background-position: -1483px -186px;
+}
+	
+.ID_ENHANCER2 {
+    background-position: -1595px -186px;
+}
+	
+.ID_FBRETURN1 {
+    background-position: -1707px -186px;
+}
+	
+.ID_FBRETURN2 {
+    background-position: -1819px -186px;
+}
+	
+.ID_FBSEND1 {
+    background-position: -1931px -186px;
+}
+	
+.ID_FBSEND2 {
+    background-position: -27px -271px;
+}
+	
+.ID_FILTER1 {
+    background-position: -139px -271px;
+}
+	
+.ID_FILTER2 {
+    background-position: -251px -271px;
+}
+	
+.ID_FILTER3 {
+    background-position: -363px -271px;
+}
+	
+.ID_FILTER4 {
+    background-position: -475px -271px;
+}
+	
+.ID_FLANGER1 {
+    background-position: -587px -271px;
+}
+	
+.ID_FLANGER2 {
+    background-position: -699px -271px;
+}
+	
+.ID_FORMANT1 {
+    background-position: -811px -271px;
+}
+	
+.ID_FORMANT2 {
+    background-position: -923px -271px;
+}
+	
+.ID_GATE1 {
+    background-position: -1035px -271px;
+}
+	
+.ID_GATE2 {
+    background-position: -1147px -271px;
+}
+	
+.ID_GATE3 {
+    background-position: -1259px -271px;
+}
+	
+.ID_GATE4 {
+    background-position: -1371px -271px;
+}
+	
+.ID_GRAPHEQ1 {
+    background-position: -1483px -271px;
+}
+	
+.ID_GRAPHEQ2 {
+    background-position: -1595px -271px;
+}
+	
+.ID_GRAPHEQ3 {
+    background-position: -1707px -271px;
+}
+	
+.ID_GRAPHEQ4 {
+    background-position: -1819px -271px;
+}
+	
+.ID_IRPLAYER1 {
+    background-position: -1931px -271px;
+}
+	
+.ID_IRPLAYER2 {
+    background-position: -27px -356px;
+}
+	
+.ID_LOOPER1 {
+    background-position: -139px -356px;
+}
+	
+.ID_MIDIBLOCK {
+    background-position: -251px -356px;
+}
+	
+.ID_MEGATAP1 {
+    background-position: -363px -356px;
+}
+	
+.ID_MEGATAP2 {
+    background-position: -475px -356px;
+}
+	
+.ID_MIXER1 {
+    background-position: -587px -356px;
+}
+	
+.ID_MIXER2 {
+    background-position: -699px -356px;
+}
+	
+.ID_MIXER3 {
+    background-position: -811px -356px;
+}
+	
+.ID_MIXER4 {
+    background-position: -923px -356px;
+}
+	
+.ID_MULTICOMP1 {
+    background-position: -1035px -356px;
+}
+	
+.ID_MULTICOMP2 {
+    background-position: -1147px -356px;
+}
+	
+.ID_MULTIPLEXER1 {
+    background-position: -1259px -356px;
+}
+	
+.ID_MULTIPLEXER2 {
+    background-position: -1371px -356px;
+}
+	
+.ID_MULTITAP1 {
+    background-position: -1483px -356px;
+}
+	
+.ID_MULTITAP2 {
+    background-position: -1595px -356px;
+}
+	
+.ID_PARAEQ1 {
+    background-position: -1707px -356px;
+}
+	
+.ID_PARAEQ2 {
+    background-position: -1819px -356px;
+}
+	
+.ID_PARAEQ3 {
+    background-position: -1931px -356px;
+}
+	
+.ID_PARAEQ4 {
+    background-position: -27px -441px;
+}
+	
+.ID_PHASER1 {
+    background-position: -139px -441px;
+}
+	
+.ID_PHASER2 {
+    background-position: -251px -441px;
+}
+	
+.ID_PITCH1 {
+    background-position: -363px -441px;
+}
+	
+.ID_PITCH2 {
+    background-position: -475px -441px;
+}
+	
+.ID_PLEX1 {
+    background-position: -587px -441px;
+}
+	
+.ID_PLEX2 {
+    background-position: -699px -441px;
+}
+	
+.ID_RTA1 {
+    background-position: -811px -441px;
+}
+	
+.ID_RESONATOR1 {
+    background-position: -923px -441px;
+}
+	
+.ID_RESONATOR2 {
+    background-position: -1035px -441px;
+}
+	
+.ID_REVERB1 {
+    background-position: -1147px -441px;
+}
+	
+.ID_REVERB2 {
+    background-position: -1259px -441px;
+}
+	
+.ID_RINGMOD1 {
+    background-position: -1371px -441px;
+}
+	
+.ID_ROTARY1 {
+    background-position: -1483px -441px;
+}
+	
+.ID_ROTARY2 {
+    background-position: -1595px -441px;
+}
+	
+.ID_SYNTH1 {
+    background-position: -1707px -441px;
+}
+	
+.ID_SYNTH2 {
+    background-position: -1819px -441px;
+}
+	
+.ID_TENTAP1 {
+    background-position: -1931px -441px;
+}
+	
+.ID_TENTAP2 {
+    background-position: -27px -526px;
+}
+	
+.ID_TONEMATCH1 {
+    background-position: -139px -526px;
+}
+	
+.ID_TREMOLO1 {
+    background-position: -251px -526px;
+}
+	
+.ID_TREMOLO2 {
+    background-position: -363px -526px;
+}
+	
+.ID_VOCODER1 {
+    background-position: -475px -526px;
+}
+	
+.ID_VOLUME1 {
+    background-position: -587px -526px;
+}
+	
+.ID_VOLUME2 {
+    background-position: -699px -526px;
+}
+	
+.ID_VOLUME3 {
+    background-position: -811px -526px;
+}
+	
+.ID_VOLUME4 {
+    background-position: -923px -526px;
+}
+	
+.ID_WAH1 {
+    background-position: -1035px -526px;
+}
+	
+.ID_WAH2 {
+    background-position: -1147px -526px;
+}
+    /*</style>*/
+    
+
+.ID_INPUT1 {
+    background-position: -27px -101px;
+}
+	
+.ID_INPUT2 {
+    background-position: -139px -101px;
+}
+	
+.ID_INPUT3 {
+    background-position: -251px -101px;
+}
+	
+.ID_INPUT4 {
+    background-position: -363px -101px;
+}
+	
+.ID_INPUT5 {
+    background-position: -475px -101px;
+}
+	
+.ID_OUTPUT1 {
+    background-position: -587px -101px;
+}
+	
+.ID_OUTPUT2 {
+    background-position: -699px -101px;
+}
+	
+.ID_OUTPUT3 {
+    background-position: -811px -101px;
+}
+	
+.ID_OUTPUT4 {
+    background-position: -923px -101px;
+}
+	
+.ID_DISTORT1 {
+    background-position: -1035px -101px;
+}
+	
+.ID_DISTORT2 {
+    background-position: -1147px -101px;
+}
+	
+.ID_CAB1 {
+    background-position: -1259px -101px;
+}
+	
+.ID_CAB2 {
+    background-position: -1371px -101px;
+}
+	
+.ID_CHORUS1 {
+    background-position: -1483px -101px;
+}
+	
+.ID_CHORUS2 {
+    background-position: -1595px -101px;
+}
+	
+.ID_COMP1 {
+    background-position: -1707px -101px;
+}
+	
+.ID_COMP2 {
+    background-position: -1819px -101px;
+}
+	
+.ID_COMP3 {
+    background-position: -1931px -101px;
+}
+	
+.ID_COMP4 {
+    background-position: -27px -186px;
+}
+	
+.ID_CROSSOVER1 {
+    background-position: -139px -186px;
+}
+	
+.ID_CROSSOVER2 {
+    background-position: -251px -186px;
+}
+	
+.ID_DELAY1 {
+    background-position: -363px -186px;
+}
+	
+.ID_DELAY2 {
+    background-position: -475px -186px;
+}
+	
+.ID_DELAY3 {
+    background-position: -587px -186px;
+}
+	
+.ID_DELAY4 {
+    background-position: -699px -186px;
+}
+	
+.ID_FUZZ1 {
+    background-position: -811px -186px;
+}
+	
+.ID_FUZZ2 {
+    background-position: -923px -186px;
+}
+	
+.ID_FUZZ3 {
+    background-position: -1035px -186px;
+}
+	
+.ID_FUZZ4 {
+    background-position: -1147px -186px;
+}
+	
+.MISSING_DYNDST1 {
+    background-position: -1259px -186px;
+}
+	
+.MISSING_DYNDST2 {
+    background-position: -1371px -186px;
+}
+	
+.ID_ENHANCER1 {
+    background-position: -1483px -186px;
+}
+	
+.ID_ENHANCER2 {
+    background-position: -1595px -186px;
+}
+	
+.ID_FBRETURN1 {
+    background-position: -1707px -186px;
+}
+	
+.ID_FBRETURN2 {
+    background-position: -1819px -186px;
+}
+	
+.ID_FBSEND1 {
+    background-position: -1931px -186px;
+}
+	
+.ID_FBSEND2 {
+    background-position: -27px -271px;
+}
+	
+.ID_FILTER1 {
+    background-position: -139px -271px;
+}
+	
+.ID_FILTER2 {
+    background-position: -251px -271px;
+}
+	
+.ID_FILTER3 {
+    background-position: -363px -271px;
+}
+	
+.ID_FILTER4 {
+    background-position: -475px -271px;
+}
+	
+.ID_FLANGER1 {
+    background-position: -587px -271px;
+}
+	
+.ID_FLANGER2 {
+    background-position: -699px -271px;
+}
+	
+.ID_FORMANT1 {
+    background-position: -811px -271px;
+}
+	
+.ID_FORMANT2 {
+    background-position: -923px -271px;
+}
+	
+.ID_GATE1 {
+    background-position: -1035px -271px;
+}
+	
+.ID_GATE2 {
+    background-position: -1147px -271px;
+}
+	
+.ID_GATE3 {
+    background-position: -1259px -271px;
+}
+	
+.ID_GATE4 {
+    background-position: -1371px -271px;
+}
+	
+.ID_GRAPHEQ1 {
+    background-position: -1483px -271px;
+}
+	
+.ID_GRAPHEQ2 {
+    background-position: -1595px -271px;
+}
+	
+.ID_GRAPHEQ3 {
+    background-position: -1707px -271px;
+}
+	
+.ID_GRAPHEQ4 {
+    background-position: -1819px -271px;
+}
+	
+.ID_IRPLAYER1 {
+    background-position: -1931px -271px;
+}
+	
+.ID_IRPLAYER2 {
+    background-position: -27px -356px;
+}
+	
+.ID_LOOPER1 {
+    background-position: -139px -356px;
+}
+	
+.ID_MIDIBLOCK {
+    background-position: -251px -356px;
+}
+	
+.ID_MEGATAP1 {
+    background-position: -363px -356px;
+}
+	
+.ID_MEGATAP2 {
+    background-position: -475px -356px;
+}
+	
+.ID_MIXER1 {
+    background-position: -587px -356px;
+}
+	
+.ID_MIXER2 {
+    background-position: -699px -356px;
+}
+	
+.ID_MIXER3 {
+    background-position: -811px -356px;
+}
+	
+.ID_MIXER4 {
+    background-position: -923px -356px;
+}
+	
+.ID_MULTICOMP1 {
+    background-position: -1035px -356px;
+}
+	
+.ID_MULTICOMP2 {
+    background-position: -1147px -356px;
+}
+	
+.ID_MULTIPLEXER1 {
+    background-position: -1259px -356px;
+}
+	
+.ID_MULTIPLEXER2 {
+    background-position: -1371px -356px;
+}
+	
+.ID_MULTITAP1 {
+    background-position: -1483px -356px;
+}
+	
+.ID_MULTITAP2 {
+    background-position: -1595px -356px;
+}
+	
+.ID_PARAEQ1 {
+    background-position: -1707px -356px;
+}
+	
+.ID_PARAEQ2 {
+    background-position: -1819px -356px;
+}
+	
+.ID_PARAEQ3 {
+    background-position: -1931px -356px;
+}
+	
+.ID_PARAEQ4 {
+    background-position: -27px -441px;
+}
+	
+.ID_PHASER1 {
+    background-position: -139px -441px;
+}
+	
+.ID_PHASER2 {
+    background-position: -251px -441px;
+}
+	
+.ID_PITCH1 {
+    background-position: -363px -441px;
+}
+	
+.ID_PITCH2 {
+    background-position: -475px -441px;
+}
+	
+.ID_PLEX1 {
+    background-position: -587px -441px;
+}
+	
+.ID_PLEX2 {
+    background-position: -699px -441px;
+}
+	
+.ID_RTA1 {
+    background-position: -811px -441px;
+}
+	
+.ID_RESONATOR1 {
+    background-position: -923px -441px;
+}
+	
+.ID_RESONATOR2 {
+    background-position: -1035px -441px;
+}
+	
+.ID_REVERB1 {
+    background-position: -1147px -441px;
+}
+	
+.ID_REVERB2 {
+    background-position: -1259px -441px;
+}
+	
+.ID_RINGMOD1 {
+    background-position: -1371px -441px;
+}
+	
+.ID_ROTARY1 {
+    background-position: -1483px -441px;
+}
+	
+.ID_ROTARY2 {
+    background-position: -1595px -441px;
+}
+	
+.ID_SYNTH1 {
+    background-position: -1707px -441px;
+}
+	
+.ID_SYNTH2 {
+    background-position: -1819px -441px;
+}
+	
+.ID_TENTAP1 {
+    background-position: -1931px -441px;
+}
+	
+.ID_TENTAP2 {
+    background-position: -27px -526px;
+}
+	
+.ID_TONEMATCH1 {
+    background-position: -139px -526px;
+}
+	
+.ID_TREMOLO1 {
+    background-position: -251px -526px;
+}
+	
+.ID_TREMOLO2 {
+    background-position: -363px -526px;
+}
+	
+.ID_VOCODER1 {
+    background-position: -475px -526px;
+}
+	
+.ID_VOLUME1 {
+    background-position: -587px -526px;
+}
+	
+.ID_VOLUME2 {
+    background-position: -699px -526px;
+}
+	
+.ID_VOLUME3 {
+    background-position: -811px -526px;
+}
+	
+.ID_VOLUME4 {
+    background-position: -923px -526px;
+}
+	
+.ID_WAH1 {
+    background-position: -1035px -526px;
+}
+	
+.ID_WAH2 {
+    background-position: -1147px -526px;
+}

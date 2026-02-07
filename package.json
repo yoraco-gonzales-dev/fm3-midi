@@ -1,0 +1,23 @@
+{
+  "name": "fm3-amp-view",
+  "version": "1.0.0",
+  "main": "fas-midi-sender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "easymidi": "^3.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "bin": {
+    "fas-midi-sender.js": "fas-midi-sender.js",
+    "midi-interfaces-list": "midi-interfaces-list.js"
+  },
+  "dependencies": {
+    "easymidi": "^2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoraco-gonzales-dev/fm3-midi"
+  }
+}

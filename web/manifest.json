@@ -1,0 +1,28 @@
+{
+    "theme_color": "#FFEB3B",
+    "background_color": "#212121",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "any",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "en-US",
+    "name": "Online MIDI Controller - AXE Fx III|FM9|FM3",
+    "short_name": "Frac Online MIDI Controller",
+    "id": "https://yoraco.site44.com/fm3midi",
+    "start_url": "https://yoraco.site44.com/fm3midi",
+    "scope": "https://yoraco.site44.com/fm3midi/",
+    "description": "Online MIDI Controller for AXE Fx III, FM9 & FM3"
+}
