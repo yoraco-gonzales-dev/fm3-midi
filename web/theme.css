@@ -1,0 +1,493 @@
+:root {
+    --background-color-black: black;
+    --background-color: #212121;
+
+    --color-white: white;
+    --color-device-display: black;
+    --color-device-display-yellow: #FFEB3B;
+
+    --color-device-display-text-white: grey;
+    --color-device-display-text-white-higlighted: var(--color-white);
+
+    --color-device-display-row-higlighted-bg: #1e88e5;
+    --color-device-display-turn-button: #80DEEA;
+    --color-device-display-cyan: #00bcd4;
+
+
+    --display-height: 280px;
+    --display-width: 580px;
+    --device-unit-front-color: #212121;
+}
+
+body {
+    background-color: var(--background-color-black);
+}
+
+.deviceUnit {
+    margin: auto;
+    width: fit-content;
+    min-width: var(--display-width);
+
+    background: #131313;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: -0;
+}
+
+.deviceUnitFront {
+    margin: auto;
+    background-color: var(--device-unit-front-color);
+    padding: 1px;
+
+}
+
+.deviceDisplay {
+    background-color: var(--color-device-display);
+    padding: 1rem;
+    padding: 1rem;
+    width: var(--display-width);
+    height: var(--display-height);
+    border-style: solid;
+    border-color: #424242;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+
+    margin: auto;
+
+    border-radius: 4px;
+
+    position: relative;
+}
+
+.control,
+.controls {
+    color: var(--color-device-display-turn-button);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.controls {
+    display: block;
+    position: absolute;
+    bottom: 0.4rem;
+}
+
+.control:hover {
+    cursor: pointer;
+}
+
+.devicePanel,
+.deviceName {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.deviceBlocks {
+    padding: 1rem;
+    padding: 1rem;
+
+    height: var(--display-height);
+    width: var(--display-width);
+    margin: auto;
+}
+
+.bypassStates {
+    margin: auto;
+    max-width: 600px;
+    max-width: calc(var(--display-width) -20px);
+}
+
+.bypassStates h3 {
+    display: none;
+}
+
+.deviceName {
+    color: var(--background-color);
+}
+
+.deviceName:before {
+    content: "NOT";
+    display: inline-block;
+    border-radius: 0.4rem;
+    background-color: var(--color-white);
+    color: var(--background-color);
+    padding: 0.4rem;
+    transform: scaleX(2);
+    margin-left: 1.9rem;
+    opacity: 0.8;
+
+    font-size: 1rem;
+}
+
+.deviceName.FM3:before {
+    content: "FM3";
+}
+
+.deviceName.FM9:before {
+    content: "FM9";
+}
+
+.deviceName.AXEFXIII:before {
+    content: "AXE-FX III";
+    transform: scaleX(1.6);
+}
+
+.deviceName:after {
+    content: "AMP MODELER / FX PROCESSOR";
+    background-color: var(--background-color);
+    color: var(--color-white);
+    opacity: 0.8;
+
+    margin-left: 2rem;
+}
+
+.deviceContainerInput {
+    margin: auto;
+    width: fit-content;
+}
+
+.deviceContainerInput label {
+    display: none;
+}
+
+.deviceContainerInput select {
+    background: #424242;
+    color: #9E9E9E;
+    border: none;
+    padding: 0.2rem;
+    font-size: 1reM;
+    border-radius: 2px;
+}
+
+.patchName {
+    height: 2rem;
+}
+
+.patchName,
+.patchNameTitleNum {
+    font-size: 1.8rem;
+}
+
+.patchNameLabel {
+    display: none;
+}
+
+.patchNameTitle {
+    margin: auto;
+}
+
+.patchNameTitleNum {
+    color: var(--color-device-display-yellow);
+    margin-left: unset;
+}
+
+.patchNameTitleNum::after {
+    content: ":";
+    display: inline-block;
+}
+
+.patchNameTitleText {
+    color: var(--color-device-display-yellow);
+}
+
+.patchPrev,
+.scenePrev,
+.patchNext,
+.sceneNext {
+    width: 0;
+    height: 0;
+    background-color: var(--color-device-display);
+    border-top: 30px solid var(--color-device-display);
+    border-bottom: 30px solid var(--color-device-display);
+    transform: scale(0.5);
+    font-size: 0px;
+    cursor: pointer;
+
+    border-top: 15px solid var(--color-device-display);
+    border-bottom: 15px solid var(--color-device-display);
+}
+
+.patchPrev:hover,
+.scenePrev:hover,
+.patchNext:hover,
+.sceneNext:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.patchPrev,
+.scenePrev {
+    border-right: 30px solid var(--color-device-display-yellow);
+    border-left: none;
+    margin-left: -1rem;
+    opacity: 0.6;
+}
+
+.patchNext,
+.sceneNext {
+    border-left: 30px solid var(--color-device-display-yellow);
+    border-right: none;
+    margin-right: -1rem;
+    opacity: 0.6;
+}
+
+.sceneNames {
+    margin-bottom: 0.2rem;
+    border-bottom: solid 1px var(--color-device-display-text-white);
+    padding-bottom: 1rem;
+    height: calc(var(--display-height) - 92px);
+}
+
+.sceneName {}
+
+.sceneNameLabel {
+    display: none;
+}
+
+.sceneNameTitle {
+    margin: auto;
+}
+
+.sceneNameTitleNum {
+    color: var(--color-device-display-yellow);
+    margin-left: unset;
+}
+
+.sceneNameTitleText {
+    color: var(--color-device-display-yellow);
+}
+
+
+.scenePrev {}
+
+.sceneNext {}
+
+/* list */
+.scenesRow {
+    padding: 0.12rem;
+}
+
+.scenesRow[data-scene-selected] {
+    background-color: var(--color-device-display-row-higlighted-bg);
+}
+
+.scenesRow:hover {
+    opacity: 0.8;
+}
+
+.scenesNumber {}
+
+.scenesNumber::before {
+    content: "Scene";
+    margin-right: 0.4rem;
+}
+
+.scenesName {
+    margin-left: 1rem;
+}
+
+.scenesRow .scenesNumber,
+.scenesRow .scenesName {
+    color: var(--color-device-display-text-white);
+}
+
+.scenesRow[data-scene-selected] .scenesNumber,
+.scenesRow[data-scene-selected] .scenesName {
+    color: var(--color-device-display-text-white-higlighted);
+}
+
+/* BLOCKS */
+
+/*
+button.effect {
+    margin: 0.8rem !important;
+    transform: scale(1.2);
+}
+*/
+button {}
+
+button {}
+
+button:hover {}
+
+button:active,
+button.effectON:active {}
+
+button.effectOFF {}
+
+/*
+button.effect.effectON,
+button.effect.effectOFF {
+    color: gray;
+    background-color: transparent;
+    margin: unset;
+    padding: unset;
+    width: unset;
+}
+*/
+button.effect.effectON:after,
+button.effect.effectOFF:after {}
+
+button.effect.effectON:after {}
+
+button.effect.effectOFF:after {}
+
+button.effect.effectON,
+button.effectON:hover {}
+
+button.effectOFF:hover {}
+
+button.effect.effectON:hover:after {}
+
+button.effect.effectOFF:hover:after {}
+
+button.effect em {}
+
+button.effect.effectON::after,
+button.effect.effectON:hover:after,
+button.effect.effectON:active:after,
+button.effect.effectOFF:hover:after,
+button.effect.effectOFF:active::after {}
+
+
+
+button.effect.effectON::after,
+button.effect.effectON:hover:after,
+button.effect.effectON:active:after,
+button.effect.effectOFF:after,
+button.effect.effectOFF:hover:after,
+button.effect.effectOFF:active::after {
+    display: none;
+}
+
+
+/*
+.x-effect {
+    height: 44px !important;
+    width: 60px !important;
+    background-color: black;
+
+    height: 44px !important;
+    width: 60px !important;
+    border: solid 1px transparent;
+    cursor: pointer;
+    background-color: black;
+    background-image: url(./img/block-all-sprites.jpg);
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.effect:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.effect:active {
+    opacity: 0.4;
+}
+
+.effect,
+.effect em,
+button.effect em {
+    font-size: 0px;
+}
+
+button.effect em {
+    font-size: 0.6rem !important;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    opacity: 0.4;
+}
+
+.effectOFF {
+    opacity: 0.4;
+}
+*/
+
+
+button.effect.effectON,
+button.effect.effectOFF {
+    color: transparent;
+    padding: 0.4rem;
+    margin: 0.2rem;
+}
+
+button.effect em {
+    color: white;
+    font-size: 0.6rem !important;
+    position: absolute;
+    x-top: 4px;
+    bottom: 26px;
+    right: 4px;
+    opacity: 0.4;
+}
+
+
+/* /BLOCK */
+
+
+/* log */
+.incomingLog {
+    width: 631px;
+    height: 478px;
+    background-color: #424242;
+    border: solid 1px #616161;
+}
+
+.incomingLog .logTimestamp,
+.incomingLog .logHex {
+    color: #00bcd4;
+    background-color: transparent;
+}
+
+.incomingLog .logHex {
+    font-size: .7rem;
+}
+
+.incomingLog .logTimestamp {
+    min-width: 110px;
+    width: 110px;
+    max-width: 120px;
+}
+
+.incomingLog .logHex:nth-child(9n) {
+    margin-right: 0.8rem;
+}
+
+
+.controls {
+    /* required for midi-tempo */
+    display: block;
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
+/* MIDI TEMPO */
+.midiTempoON:after {
+    background: #FFEB3B;
+    opacity: 0.4;
+}
+
+#midiTempo:after {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 0.2rem;
+}
+
+.controls #midiTempo {
+    display: inline-block;
+    right: 1rem;
+    position: absolute;
+    cursor: default;
+}
+
+/* /MIDI TEMPO */

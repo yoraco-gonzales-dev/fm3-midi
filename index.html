@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FM3 Online MIDI Interface</title>
+    <link rel="icon" type="image/png" href="./web/icon512_rounded.png">
+    <link rel="manifest" href="./web/manifest.json">
+
+    <link rel="stylesheet" href="./web/log.css">
+    <link rel="stylesheet" href="./web/app.css">
+    <link rel="stylesheet" href="./web/theme.css">
+
+    <link rel="preload" as="image" href="./web/sprites.jpeg">
+    <link rel="stylesheet" href="./web/sprites.css">
+    <link rel="stylesheet" href="./web/sprites-fix.css">
+
+    <script src="./web/require-shim.js"></script>
+    <script src="./src/FractalMIDI.js"></script>
+    <script src="./src/api.js"></script>
+    <script src="./src/client.js"></script>
+    <script src="./web/helper.js"></script>
+    <script src="./web/app.js"></script>
+    <script src="./web/log.js"></script>
+
+</head>
+
+<body>
+    <div class="fasDeviceSelector">
+        <a href="?fasDevice=AXEFXIII" data-fas-id="AXEFXIII">AXE Fx III</a>
+        <a href="?fasDevice=FM9" data-fas-id="FM9">FM9</a>
+        <a href="?fasDevice=FM3" data-fas-id="FM3">FM3</a>
+    </div>
+    <div class="deviceContainer">
+        <div class="deviceContainerInput">
+
+        </div>
+        <div class="deviceContainerOutput">
+
+        </div>
+    </div>
+    <div class="deviceUnit">
+        <div class="deviceUnitFront">
+            <h3 class="deviceName"></h3>
+            <div class="devicePanel">
+                <div class="deviceDisplay">
+                    <div class="patchName"></div>
+                    <div class="sceneName"></div>
+                    <div class="sceneNames"></div>
+                    <div class="sceneButtons"></div>
+                </div>
+                <div class="deviceBlocks">
+                    <div class="bypassStates"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logContainer">
+        <div class="logHeaderHeader">
+            <div class="logHeader">
+            </div>
+            <button class="logContainerClose">close</button>
+        </div>
+        <div>
+            <div class="logSendControls">
+                <label class="logSendControlsLabel">Send MIDI Sysex Message</label>
+                <button class="sendButton">send</button>
+                <button class="switchButton">switch</button>
+                <input class="syexContentSingle" type="text"
+                    placeholder="E.g. Reverb 1 ON: 0xF0,  0x00,  0x01,  0x74,  0x11,  0x0A,  0x42,  0x00,  0x00,  0x5C,  0xF7 ...">
+                <textarea class="syexContentMultiline"
+                    placeholder="Send a MIDI Sysex Message. E.g. Reverb 1 ON: 0xF0,  0x00,  0x01,  0x74,  0x11,  0x0A,  0x42,  0x00,  0x00,  0x5C,  0xF7 ... "></textarea>
+            </div>
+            <div class="logListenControls">
+                <label class="logListenControlsLabel">Listen to MIDI Sysex Messages</label>
+                <button class="stopLog" title="Stop log">stop</button>
+                <button class="startLog" title="Start log">start</button>
+                <button class="clearLog" title="Clear log">clear</button>
+                <button class="restartLog" title="Restart log">restart</button>
+                <input class="filterLog" placeholder="0x74 ? FF * a0... "
+                    title="Filter log:  Write hexadecimal '0x0A 0xBC...', '0x0A BC...' or  decimal '127 03 ...'.  Placeholders: '?' = One character.  '*' = Multiple characters.  Examples: '0xAF 0x1C ? 0xFF',  '0xAF 0x1C * 0xFF',  '0xAF 1C ? FF',  '0xAF 1C * FF',  '127 10 ? 121 12',  '127 10 * 121 12'">
+                <button class="filterLogClear" title="Reset filter">reset</button>
+            </div>
+            <div>
+                <div class="incomingLog"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            // Your code to run since DOM is loaded and ready
+            window.$initAppp()
+        });
+    </script>
+</body>
+
+</html>

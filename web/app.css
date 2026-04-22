@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+}
+
+.deviceContainer {
+    margin-bottom: 1rem;
+}
+
+.deviceDisplay {}
+
+.deviceName {}
+
+.patchName {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.patchNameLabel {
+    min-width: 10rem;
+}
+
+.patchNameTitle {
+    width: 100%;
+}
+
+.patchNameTitleNum {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 2.4rem;
+}
+
+.patchNameTitleText {}
+
+.sceneName {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sceneNameLabel {
+    min-width: 10rem;
+}
+
+.sceneNameTitle {
+    width: 100%;
+}
+
+.sceneNameTitleNum {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.sceneNameTitleText {}
+
+
+/* list */
+.scenesRow {
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.scenesRow:hover {
+    cursor: pointer;
+}
+
+.scenesNumber {
+    display: inline-block;
+}
+
+.scenesName {
+    display: inline-block;
+}
+
+
+
+button.effect {}
+
+button {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    x-height: 100px;
+    x-margin: 1rem;
+    position: relative;
+    x-width: 50px;
+
+    padding: 0.4rem;
+    margin: 0.2rem;
+
+    font-weight: 700;
+
+    border-width: 1px;
+    border-color: gray;
+    border-color: transparent;
+}
+
+button {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+button:hover {
+    cursor: pointer;
+    x-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+button:active,
+button.effectON:active {
+    x-color: white;
+    x-background-color: #39843c;
+}
+
+_button.effectON {
+    x-color: white;
+    x-background-color: #4CAF50;
+}
+
+
+button.effectOFF {
+    color: darkgrey;
+    background-color: #ccc;
+}
+
+
+button.effect.effectON,
+button.effect.effectOFF {
+    color: gray;
+    background-color: transparent;
+    margin: 0.4rem;
+    padding: 1rem;
+    width: 10rem;
+}
+
+button.effect.effectON:after,
+button.effect.effectOFF:after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+button.effect.effectON:after {
+    background-color: #4CAF50;
+}
+
+button.effect.effectOFF:after {
+    background-color: gray;
+}
+
+button.effect.effectON,
+button.effectON:hover {
+    color: white;
+    background-color: #4CAF50;
+}
+
+button.effectOFF:hover {
+    color: white;
+    background-color: gray;
+}
+
+button.effect.effectON:hover:after {
+    background-color: white;
+    background-color: #f44336;
+}
+
+button.effect.effectOFF:hover:after {
+    background-color: white;
+}
+
+button.effect em {
+    font-size: 0.6rem;
+    font-style: normal;
+}
+
+button.effect.effectON::after,
+button.effect.effectON:hover:after,
+button.effect.effectON:active:after,
+button.effect.effectOFF:hover:after,
+button.effect.effectOFF:active::after {
+    background-color: #f44336;
+}
+
+
+
+
+.fasDeviceSelector {}
+
+.fasDeviceSelector a {
+    color: #3f3d3d;
+    border: solid 1px #3f3d3d;
+    padding: 0.2rem;
+    text-decoration: none;
+}
+
+.fasDeviceSelector a:hover {
+    text-decoration: underline;
+    color: #575656;
+    border: solid 1px #575656;
+}
+
+.fasDeviceSelector a[data-fas-selected] {
+    color: #787777;
+    border: solid 1px #787777;
+}
